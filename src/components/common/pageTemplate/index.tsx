@@ -11,9 +11,9 @@ const PageTemplate = ({children}: ProviderProps) => {
 
     return (
         <Container>
-            {pathname !== "/sign-up" && <Topbar />}
+            {pathname !== "/login" && pathname !== "/sign-up" && <Topbar />}
             <Layout>{children}</Layout>
-            {pathname !== "/sign-up" && <Bottombar />}
+            {pathname !== "/login" && pathname !== "/sign-up" && <Bottombar />}
         </Container>
     )
 }
