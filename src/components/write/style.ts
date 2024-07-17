@@ -185,6 +185,10 @@ export const FileUpload = styled.button`
     cursor: pointer;
 `
 
+export const FileInputRef = styled.input.attrs({type: 'file'})`
+    display: none;
+`
+
 export const SubmitBtnWrap = styled.div`
     width: 72%;
     height: auto;
