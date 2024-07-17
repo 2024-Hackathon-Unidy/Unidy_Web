@@ -101,7 +101,7 @@ export const TitlePost = styled.div`
 
 export const Post = styled.div`
   width: 90%;
-  height: 55px;
+  min-height: 55px;
 
   display: flex;
   flex-direction: row;
