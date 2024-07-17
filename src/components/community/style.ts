@@ -146,6 +146,8 @@ export const PageWrap = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+
+  margin-top: 10px;
 `;
 
 export const CurrentNum = styled.span`
