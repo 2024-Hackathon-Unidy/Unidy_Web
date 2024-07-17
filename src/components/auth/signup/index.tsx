@@ -3,11 +3,11 @@ import * as S from "./style";
 import useSignup from "src/hooks/signup/useSignup";
 import Logo from "src/assets/img/common/UNIDY_Logo.svg";
 import SignUpImg from "src/assets/img/signup/SignUp_Img.svg";
-import IdImg from "src/assets/img/signup/ID_Img.svg";
-import PwImg from "src/assets/img/signup/Pw_Img.svg";
-import HideImg from "src/assets/img/signup/Hide_Img.svg";
-import ShowImg from "src/assets/img/signup/Show_Img.svg";
-import LanguageImg from "src/assets/img/signup/Language_Img.svg";
+import IdImg from "src/assets/img/common/ID_Img.svg";
+import PwImg from "src/assets/img/common/Pw_Img.svg";
+import HideImg from "src/assets/img/common/Hide_Img.svg";
+import ShowImg from "src/assets/img/common/Show_Img.svg";
+import LanguageImg from "src/assets/img/common/Language_Img.svg";
 import { LanguageData } from "src/constants/data/language";
 
 const SignUp = () => {
