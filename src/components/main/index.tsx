@@ -5,11 +5,8 @@ import ExFastival from "src/assets/img/main/Ex_Fastival_Img.svg";
 import ExPolicy from "src/assets/img/main/Ex_Policy_Img.svg";
 import Left from "src/assets/img/common/Left.svg";
 import Right from "src/assets/img/common/Right.svg";
-import { useNavigate } from "react-router-dom";
 
 const Main = () => {
-  const navigate = useNavigate();
-
   return (
     <S.MainPage>
       <S.ContentsWrap>
