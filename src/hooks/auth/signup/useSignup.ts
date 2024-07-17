@@ -29,7 +29,7 @@ const useSignup = () => {
       if (!pw) return showToast("error", "비밀번호를 입력해주세요");
       if (!lan) return showToast("error", "언어를 선택해주세요");
 
-      await axios.post(`${CONFIG.UNIDY_Server}/#`, { // API 추가 필요
+      await axios.post(`${CONFIG.UNIDY_Server}/member/register`, { // API 추가 필요
         id: id,
         pw: pw,
         lan: lan,

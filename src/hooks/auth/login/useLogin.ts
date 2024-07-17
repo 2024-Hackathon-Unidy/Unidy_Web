@@ -33,13 +33,13 @@ const useLogin = () => {
       if (!data.pw) return showToast("error", "비밀번호를 입력해주세요");
 
       await axios
-        .post(`${CONFIG.UNIDY_Server}/#`, {
+        .post(`${CONFIG.UNIDY_Server}/member/login`, {
           id: data.id,
           pw: data.pw,
         })
         .then((res) => {
-        //   token.getToken(ACCESS_TOKEN_KEY, res.data.data.accessToken);
-        //   token.getToken(REFRESH_TOKEN_KEY, res.data.data.refreshToken);
+          token.setToken(ACCESS_TOKEN_KEY, res.data.data[0].accessToken);
+          token.setToken(REFRESH_TOKEN_KEY, res.data.data[0].refreshToken);
           showToast("success", "로그인 성공");
           navigate("/");
         });
