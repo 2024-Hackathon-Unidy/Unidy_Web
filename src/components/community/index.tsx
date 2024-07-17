@@ -4,8 +4,10 @@ import Search from "src/assets/img/common/Search_icon.svg";
 import Left from "src/assets/img/common/Left.svg";
 import Right from "src/assets/img/common/Right.svg";
 import useCommunity from "src/hooks/community/useCommunity";
+import { useNavigate } from "react-router-dom";
 
 const Community = () => {
+  const navigate = useNavigate();
   const { ...community } = useCommunity();
 
   return (
@@ -27,7 +29,7 @@ const Community = () => {
             <S.Date>작성 날짜</S.Date>
           </S.TitlePost>
           {Array.from({ length: 10 }).map((_, idx: number) => (
-            <S.Post key={idx}>
+            <S.Post key={idx} onClick={() => navigate(`/community/${idx}`)}>
               <S.Nickname>서현동</S.Nickname>
               <S.Title>보령 머드축제 갔다</S.Title>
               <S.Date>2024 . 7 . 17</S.Date>
