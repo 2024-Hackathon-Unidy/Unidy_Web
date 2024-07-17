@@ -5,26 +5,13 @@ import ExFastival from "src/assets/img/main/Ex_Fastival_Img.svg";
 import ExPolicy from "src/assets/img/main/Ex_Policy_Img.svg";
 import Left from "src/assets/img/common/Left.svg";
 import Right from "src/assets/img/common/Right.svg";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const navigate = useNavigate();
+
   return (
     <S.MainPage>
-      <S.NavWrap>
-        <S.Nav>
-          <S.NavLeft>
-            <S.NavText>홈</S.NavText>
-            <S.NavLine>|</S.NavLine>
-            <S.NavText>문화축제</S.NavText>
-            <S.NavLine>|</S.NavLine>
-            <S.NavText>커뮤니티</S.NavText>
-            <S.NavLine>|</S.NavLine>
-            <S.NavText>언어교육</S.NavText>
-          </S.NavLeft>
-          <S.NavRight>
-            <S.NavText>작성하기</S.NavText>
-          </S.NavRight>
-        </S.Nav>
-      </S.NavWrap>
       <S.ContentsWrap>
         <S.Contents>
           <S.Section>

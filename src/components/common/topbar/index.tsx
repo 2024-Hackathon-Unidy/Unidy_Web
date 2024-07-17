@@ -35,6 +35,24 @@ const Topbar = () => {
           )}
         </S.AuthWrap>
       </S.Wrap>
+      <S.NavWrap>
+        <S.Nav>
+          <S.NavLeft>
+            <S.NavText>홈</S.NavText>
+            <S.NavLine>|</S.NavLine>
+            <S.NavText>문화축제</S.NavText>
+            <S.NavLine>|</S.NavLine>
+            <S.NavText>커뮤니티</S.NavText>
+            <S.NavLine>|</S.NavLine>
+            <S.NavText>언어교육</S.NavText>
+            <S.NavLine>|</S.NavLine>
+            <S.NavText>정책 및 지원</S.NavText>
+          </S.NavLeft>
+          <S.NavRight>
+            <S.NavText onClick={() => navigate("/write")}>작성하기</S.NavText>
+          </S.NavRight>
+        </S.Nav>
+      </S.NavWrap>
     </S.Container>
   );
 };

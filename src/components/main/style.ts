@@ -8,60 +8,6 @@ export const MainPage = styled.div`
   flex-direction: column;
 `;
 
-export const NavWrap = styled.div`
-  width: 100%;
-  min-height: 60px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  background-color: #3ad569;
-`;
-
-export const Nav = styled.div`
-  width: 85%;
-  height: 100%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
-export const NavLeft = styled.div`
-  width: auto;
-  height: 100%;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  gap: 30px;
-`;
-
-export const NavRight = styled.div`
-  width: auto;
-  height: 100%;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
-
-export const NavText = styled.span`
-  color: #fff;
-  font-family: Pretendard-Medium;
-  font-size: 18px;
-
-  cursor: pointer;
-`;
-
-export const NavLine = styled.span`
-  color: #fff;
-  font-family: Pretendard-Medium;
-  font-size: 18px;
-`;
-
 export const ContentsWrap = styled.div`
   width: 100%;
   min-height: 850px;
