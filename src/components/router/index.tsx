@@ -1,11 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import LoginPage from "src/page/login/page";
 import SignUpPage from "src/page/signup/page";
 import PreparePage from "src/page/prepare/page";
 
 const Router = () => {
   return (
     <Routes>
+      <Route path="login" element={<LoginPage />} />
       <Route path="/sign-up" element={<SignUpPage />} />
 
       <Route path="/company" element={<PreparePage />} />
