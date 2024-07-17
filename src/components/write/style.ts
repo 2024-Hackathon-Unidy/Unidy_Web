@@ -19,7 +19,7 @@ export const WriteWrap = styled.div`
 `
 
 export const WriteTitleWrap = styled.div`
-    width: 85%;
+    width: 80%;
     height: auto;
 
     display: flex;
@@ -43,7 +43,7 @@ export const WriteTitle = styled.span`
 `
 
 export const DangerText = styled.p`
-    width: 85%;
+    width: 80%;
     height: auto;
 
     color: #FF334B;
@@ -72,7 +72,7 @@ export const InputWrap = styled.div`
 `
 
 export const Input = styled.div`
-    width: 85%;
+    width: 80%;
     height: auto;
 
     display: flex;
@@ -114,7 +114,7 @@ export const NameInput = styled.input`
 `
 
 export const TitleInput = styled.input`
-    width: 80%;
+    width: 85%;
     height: 60px;
 
     color: #000;
@@ -132,7 +132,7 @@ export const TitleInput = styled.input`
 `
 
 export const ContentInput = styled.textarea`
-    width: 80%;
+    width: 85%;
     height: 192px;
 
     color: #000;
@@ -163,7 +163,7 @@ export const FileInput = styled.input`
     border-radius: 15px;
 
     padding-left: 20px;
-    margin-right: 20px;
+    margin-right: 65px;
 
     &::placeholder {
         color: #959595;
@@ -186,7 +186,7 @@ export const FileUpload = styled.button`
 `
 
 export const SubmitBtnWrap = styled.div`
-    width: 68%;
+    width: 72%;
     height: auto;
 
     display: flex;
