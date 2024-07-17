@@ -35,11 +35,11 @@ const useSignup = () => {
         lan: lan,
       }).then(() => {
         showToast("success", "회원가입 성공");
-        navigate("/");
+        navigate("/login");
       });
     } catch (error) {
       console.log(error);
-      showToast("error", "서버통신 오류");
+      showToast("error", "회원가입 실패");
     }
   };
 

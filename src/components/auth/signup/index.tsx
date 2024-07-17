@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./style";
-import useSignup from "src/hooks/signup/useSignup";
+import useSignup from "src/hooks/auth/signup/useSignup";
 import Logo from "src/assets/img/common/UNIDY_Logo.svg";
 import SignUpImg from "src/assets/img/signup/SignUp_Img.svg";
 import IdImg from "src/assets/img/common/ID_Img.svg";
