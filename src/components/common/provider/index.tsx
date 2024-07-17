@@ -1,25 +1,17 @@
 import React, { Fragment } from "react";
-import styled from "styled-components";
 import GlobalStyle from "src/style/global";
+import PageTemplate from "src/components/common/pageTemplate/index";
 import Router from "src/components/router/index";
 
 const Provider = () => {
   return (
     <Fragment>
       <GlobalStyle />
-      <Container>
+      <PageTemplate>
         <Router />
-      </Container>
+      </PageTemplate>
     </Fragment>
   );
 };
-
-const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  user-select: none;
-`;
 
 export default Provider;
