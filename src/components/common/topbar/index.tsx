@@ -2,12 +2,15 @@ import React from "react";
 import * as S from "./style";
 import Logo from "src/assets/img/common/UNIDY_Logo.svg";
 import Search from "src/assets/img/topbar/Search_icon.svg";
+import useTopbar from "src/hooks/common/topbar/useTopbar";
 
 const Topbar = () => {
+    const { ...topbar } = useTopbar();
+
   return (
     <S.Container>
       <S.Wrap>
-        <S.LogoWrap>
+        <S.LogoWrap onClick={topbar.GoToMain}>
             <S.Logo src={Logo}></S.Logo>
             <S.LogoText>UNIDY</S.LogoText>
         </S.LogoWrap>

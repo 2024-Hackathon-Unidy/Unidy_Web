@@ -53,6 +53,8 @@ export const SearchWrap = styled.div`
 
     border-radius: 15px;
     background-color: #F5F5F5;
+
+    position: relative;
 `
 
 export const ImgWrap = styled.div`
