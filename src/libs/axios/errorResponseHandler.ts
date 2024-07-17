@@ -46,7 +46,7 @@ const errorResponseHandler = async (error: AxiosError) => {
           onTokenRefreshed(newAccessToken);
         } catch (error) {
           token.clearToken();
-          window.location.href = "/login";
+          window.location.href = "/";
         }
       }
 

@@ -44,17 +44,18 @@ export const LogoText = styled.span`
 `
 
 export const AuthWrap = styled.div`
-    width: 178px;
+    width: auto;
     height: auto;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
+    gap: 15px;
     margin-right: 30px;
 `
 
-export const SignIn = styled.span`
+export const Link = styled.span`
     color: #5C5555;
     font-family: Pretendard-Medium;
     font-size: 16px;
@@ -68,10 +69,13 @@ export const Line = styled.span`
     font-size: 20px;
 `
 
-export const SignUp = styled.span`
+export const Img = styled.img`
+    width: 18px;
+    height: 18px;
+`
+
+export const Text = styled.span`
     color: #5C5555;
     font-family: Pretendard-Medium;
     font-size: 16px;
-
-    cursor: pointer;
 `
