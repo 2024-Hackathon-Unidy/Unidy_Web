@@ -20,7 +20,10 @@ const PageTemplate = ({ children }: ProviderProps) => {
         pathname !== "/advertise" &&
         pathname !== "/utilization" &&
         pathname !== "/personal-info" &&
-        pathname !== "/protect-policy" && <Bottombar />}
+        pathname !== "/protect-policy" &&
+        pathname !== "/cultural-festival" &&
+        pathname !== "/language-education" &&
+        pathname !== "/policy-support" && <Bottombar />}
     </Container>
   );
 };
