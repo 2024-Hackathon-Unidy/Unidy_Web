@@ -39,7 +39,13 @@ const Login = () => {
                 src={HideImg}></S.PwImg>
             </S.InputBox>
           </S.InputWrap>
-          <S.SubmitBtn>로그인</S.SubmitBtn>
+          <S.SubmitWrap>
+            <S.AccountWrap>
+                <S.AccountText>계정이 없으신가요?</S.AccountText>
+                <S.Account>회원가입</S.Account>
+            </S.AccountWrap>
+            <S.SubmitBtn>로그인</S.SubmitBtn>
+          </S.SubmitWrap>
         </S.Right>
       </S.Container>
     </S.SignUpPage>

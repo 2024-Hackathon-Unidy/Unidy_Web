@@ -144,8 +144,44 @@ export const PwImg = styled.img`
   cursor: pointer;
 `;
 
-export const SubmitBtn = styled.button`
+export const SubmitWrap = styled.div`
   width: 70%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+`;
+
+export const AccountWrap = styled.div`
+  width: auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+`;
+
+export const AccountText = styled.span`
+  color: #b6b6b6;
+  font-family: Pretendard-Bold;
+  font-size: 14px;
+`;
+
+export const Account = styled.span`
+  color: #000;
+  font-family: Pretendard-Bold;
+  font-size: 14px;
+
+  cursor: pointer;
+  margin: 0 10px;
+
+  &:hover {
+    color: #008c25;
+  }
+`;
+
+export const SubmitBtn = styled.button`
+  width: 100%;
   height: 55px;
 
   color: #fff;
@@ -156,4 +192,5 @@ export const SubmitBtn = styled.button`
   background-color: #008c25;
 
   cursor: pointer;
+  margin-top: 15px;
 `;
