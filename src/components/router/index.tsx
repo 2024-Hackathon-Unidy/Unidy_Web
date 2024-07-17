@@ -5,7 +5,7 @@ import SignUpPage from "src/page/signup/page";
 const Router = () => {
   return (
     <Routes>
-      <Route path="/signup" element={<SignUpPage />} />
+      <Route path="/sign-up" element={<SignUpPage />} />
     </Routes>
   );
 };

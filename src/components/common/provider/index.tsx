@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import GlobalStyle from "src/style/global";
-import PageTemplate from "src/components/common/pageTemplate";
+import PageTemplate from "src/components/common/pageTemplate/index";
 import Router from "src/components/router/index";
 
 const Provider = () => {
