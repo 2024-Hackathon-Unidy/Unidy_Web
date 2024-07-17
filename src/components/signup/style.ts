@@ -133,6 +133,17 @@ export const InputImg = styled.img`
   left: 15px;
 `;
 
+export const PwImg = styled.img`
+  width: 27px;
+  height: 15px;
+
+  position: absolute;
+  top: 58px;
+  right: 10px;
+
+  cursor: pointer;
+`;
+
 export const Select = styled.select`
   width: 100%;
   height: 55px;
@@ -147,9 +158,7 @@ export const Select = styled.select`
   padding-left: 45px;
 `;
 
-export const Option = styled.option`
-    
-`
+export const Option = styled.option``;
 
 export const OptionImg = styled.img`
   width: 25px;
