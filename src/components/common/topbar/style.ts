@@ -43,47 +43,35 @@ export const LogoText = styled.span`
     font-size: 24px;
 `
 
-export const SearchWrap = styled.div`
-    width: 550px;
-    height: 45px;
+export const AuthWrap = styled.div`
+    width: 178px;
+    height: auto;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    border-radius: 15px;
-    background-color: #F5F5F5;
-
-    position: relative;
+    margin-right: 30px;
 `
 
-export const ImgWrap = styled.div`
-    width: 15%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-`
-
-export const Img = styled.img`
-    width: 22px;
-    height: 22px;
-`
-
-export const Search = styled.input`
-    width: 80%;
-    height: 100%;
-
-    color: #000;
+export const SignIn = styled.span`
+    color: #5C5555;
     font-family: Pretendard-Medium;
-    font-size: 14px;
+    font-size: 16px;
 
-    border-radius: 0 15px 15px 0;
-    background-color: #F5F5F5;
+    cursor: pointer;
+`
 
-    &::placeholder {
-        color: #000;
-    }
+export const Line = styled.span`
+    color: #5C5555;
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+`
+
+export const SignUp = styled.span`
+    color: #5C5555;
+    font-family: Pretendard-Medium;
+    font-size: 16px;
+
+    cursor: pointer;
 `
