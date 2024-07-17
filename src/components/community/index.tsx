@@ -19,7 +19,11 @@ const Community = () => {
             <S.SearchImgWrap>
               <S.SearchImg src={Search}></S.SearchImg>
             </S.SearchImgWrap>
-            <S.Search placeholder="검색어를 입력해주세요."></S.Search>
+            <S.Search
+              value={community.searchValue}
+              placeholder="검색어를 입력해주세요."
+              onChange={community.handleChangeValue}
+              onKeyDown={community.handleKeydown}></S.Search>
           </S.SearchWrap>
         </S.Top>
         <S.Bottom>
@@ -28,8 +32,13 @@ const Community = () => {
             <S.Title>제목</S.Title>
             <S.Date>작성 날짜</S.Date>
           </S.TitlePost>
-          {community.data.map((item) => (
-            <S.Post key={item.boardId} onClick={() => navigate(`/community/${item.boardId}`)}>
+          {(community.filterData.length
+            ? community.filterData
+            : community.data
+          ).map((item) => (
+            <S.Post
+              key={item.boardId}
+              onClick={() => navigate(`/community/${item.boardId}`)}>
               <S.Nickname>{item.nickname}</S.Nickname>
               <S.Title>{item.title}</S.Title>
               <S.Date>{`${item.createdAt[0]}. ${item.createdAt[1]}. ${item.createdAt[2]}`}</S.Date>
@@ -43,9 +52,7 @@ const Community = () => {
               src={Left}
               style={{ marginRight: "10px" }}
               onClick={community.DecreasePage}></S.Btn>
-            <S.Btn
-              src={Right}
-              onClick={community.IncreasePage}></S.Btn>
+            <S.Btn src={Right} onClick={community.IncreasePage}></S.Btn>
           </S.PageWrap>
         </S.Bottom>
       </S.Community>
