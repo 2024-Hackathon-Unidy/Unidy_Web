@@ -29,17 +29,17 @@ const useSignup = () => {
       if (!pw) return showToast("error", "비밀번호를 입력해주세요");
       if (!lan) return showToast("error", "언어를 선택해주세요");
 
-      await axios.post(`${CONFIG.UNIDY_Server}/#`, { // API 추가 필요
+      await axios.post(`${CONFIG.UNIDY_Server}/member/register`, { // API 추가 필요
         id: id,
         pw: pw,
         lan: lan,
       }).then(() => {
         showToast("success", "회원가입 성공");
-        navigate("/");
+        navigate("/login");
       });
     } catch (error) {
       console.log(error);
-      showToast("error", "서버통신 오류");
+      showToast("error", "회원가입 실패");
     }
   };
 
