@@ -28,11 +28,11 @@ const Community = () => {
             <S.Title>제목</S.Title>
             <S.Date>작성 날짜</S.Date>
           </S.TitlePost>
-          {Array.from({ length: 10 }).map((_, idx: number) => (
-            <S.Post key={idx} onClick={() => navigate(`/community/${idx}`)}>
-              <S.Nickname>서현동</S.Nickname>
-              <S.Title>보령 머드축제 갔다</S.Title>
-              <S.Date>2024 . 7 . 17</S.Date>
+          {community.data.map((item) => (
+            <S.Post key={item.boardId} onClick={() => navigate(`/community/${item.boardId}`)}>
+              <S.Nickname>{item.nickname}</S.Nickname>
+              <S.Title>{item.title}</S.Title>
+              <S.Date>{`${item.createdAt[0]}. ${item.createdAt[1]}. ${item.createdAt[2]}`}</S.Date>
             </S.Post>
           ))}
           <S.PageWrap>

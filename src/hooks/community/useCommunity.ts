@@ -6,7 +6,7 @@ interface Props {
   nickname: string;
   title: string;
   content: string;
-  createdAt: string;
+  createdAt: number[];
 }
 
 const useCommunity = () => {
@@ -38,6 +38,7 @@ const useCommunity = () => {
           // }
         )
           .then((res) => {
+            console.log(res.data.data);
             setData(res.data.data);
           });
       } catch (error) {
