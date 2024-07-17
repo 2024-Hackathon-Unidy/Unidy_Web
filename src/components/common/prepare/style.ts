@@ -23,11 +23,25 @@ export const Img = styled.img`
     width: auto;
     height: auto;
 
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 `
 
-export const Text = styled.span`
+export const Title = styled.span`
     color: #000;
     font-family: Pretendard-Bold;
     font-size: 28px;
+
+    margin-bottom: 10px;
+`
+
+export const Content = styled.span`
+    color: #a9a9a9;
+    font-family: Pretendard-Medium;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    &:hover {
+        color: #d9d9d9;
+    }
 `
