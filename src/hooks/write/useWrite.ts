@@ -44,7 +44,7 @@ const useWrite = () => {
       if (!content) return showToast("error", "내용을 입력해주세요");
 
       await unidyAxios
-        .post("#", {
+        .post("board/create", {
           nickname: name,
           title: title,
           content: content,

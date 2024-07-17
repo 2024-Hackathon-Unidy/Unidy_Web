@@ -3,8 +3,11 @@ import * as S from "./style";
 import Search from "src/assets/img/common/Search_icon.svg";
 import Left from "src/assets/img/common/Left.svg";
 import Right from "src/assets/img/common/Right.svg";
+import useCommunity from "src/hooks/community/useCommunity";
 
 const Community = () => {
+  const { ...community } = useCommunity();
+
   return (
     <S.CommunityPage>
       <S.Community>
@@ -31,11 +34,16 @@ const Community = () => {
             </S.Post>
           ))}
           <S.PageWrap>
-            <S.CurrentNum>1</S.CurrentNum>
+            <S.CurrentNum>{community.page}</S.CurrentNum>
             <S.SumNum>/</S.SumNum>
             <S.SumNum style={{ marginRight: "10px" }}>10</S.SumNum>
-            <S.Btn src={Left} style={{ marginRight: "10px" }}></S.Btn>
-            <S.Btn src={Right}></S.Btn>
+            <S.Btn
+              src={Left}
+              style={{ marginRight: "10px" }}
+              onClick={community.DecreasePage}></S.Btn>
+            <S.Btn
+              src={Right}
+              onClick={community.IncreasePage}></S.Btn>
           </S.PageWrap>
         </S.Bottom>
       </S.Community>
