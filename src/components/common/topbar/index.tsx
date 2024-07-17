@@ -28,7 +28,7 @@ const Topbar = () => {
           ) : (
             <>
               <S.Img src={User}></S.Img>
-              <S.Text>띠혀니</S.Text>
+              <S.Text>사용자</S.Text>
               <S.Line>|</S.Line>
               <S.Link onClick={topbar.handleClickLogout}>로그아웃</S.Link>
             </>

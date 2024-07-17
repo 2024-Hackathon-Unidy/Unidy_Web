@@ -48,7 +48,7 @@ const useWrite = () => {
           nickname: name,
           title: title,
           content: content,
-          file: file,
+          // file: file,
         })
         .then(() => {
           showToast("success", "글 업로드 성공");

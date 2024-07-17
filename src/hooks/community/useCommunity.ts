@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { unidyAxios } from "src/libs/axios/customAxios";
 
+interface Props {
+  boardId: number;
+  nickname: string;
+  title: string;
+  content: string;
+  createdAt: string;
+}
+
 const useCommunity = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState<Props[]>([]);
   const [page, setPage] = useState(1);
 
   const IncreasePage = () => {
@@ -21,12 +29,14 @@ const useCommunity = () => {
     const CommunityListRead = async () => {
       try {
         await unidyAxios
-          .get("board/all", {
-            params: {
-              page: page,
-              size: 10,
-            },
-          })
+          .get("/board/all"
+          //   , {
+          //   params: {
+          //     page: page,
+          //     size: 10,
+          //   },
+          // }
+        )
           .then((res) => {
             setData(res.data.data);
           });
